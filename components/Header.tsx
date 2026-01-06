@@ -1,7 +1,7 @@
 'use client';
 import Link from "next/link";
 import Image from "next/image";
-import {usePathname} from "next/dist/client/components/navigation";
+import {usePathname} from "next/navigation";
 import {cn} from "@/lib/utils";
 
 
@@ -9,7 +9,7 @@ const Header = () => {
     const pathname = usePathname();
     return (
         <header>
-            <div className="main.container inner">
+            <div className="main-container inner">
                 <Link href="/">
                     <Image src="/logo.svg" alt="CoinPulse Logo"
                     width={132} height={40} />
